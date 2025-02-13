@@ -1,1 +1,1 @@
-Hello this is my submission for Assignment 1 using ROS Humble . Thank you 
+Hello this is my submission for Assignment 1 using ROS Humble . I was able to compose the docker containers and run them. The Nav2 system works with within Rviz, and I was albe to move the robot around. Thank you 

@@ -1,5 +1,3 @@
-# Assingment-1
+# Assingments
 
-Hello, this my submission for Assignment 1. I still have no luck to moving the bot, I am unable to launch the docker with ros humble, it just keeps opening in jazzy, even after changing the settings. I tried on virtual machines and still no luck.
-
-That being said I assure you that I will have this completely working by this coming class. I apologize for this.
+Hello, my name is Andrew Aquino. And this is where I will be submitting my assignments for class CS-698-AI-Robotics. Thank you. 

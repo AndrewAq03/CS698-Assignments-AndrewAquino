@@ -6,3 +6,5 @@ Link to video
 
 
 [![Assignment 2 - CS698 Video](https://img.youtube.com/vi/a2dyLksFPtU/0.jpg)](https://www.youtube.com/watch?v=a2dyLksFPtU)
+
+another link just case: https://www.youtube.com/watch?v=a2dyLksFPtU

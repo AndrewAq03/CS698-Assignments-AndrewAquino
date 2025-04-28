@@ -26,7 +26,6 @@ setup(
             "robot_camera_info = my_py_pkg.robot_camera_info:main",
             "camera_node = my_py_pkg.webcam_node:main",
             "pose_estimator = my_py_pkg.object_pose_estimator:main",
-            "object_estimator = my_py_pkg.object_estimator:main",
         ],
     },
 )

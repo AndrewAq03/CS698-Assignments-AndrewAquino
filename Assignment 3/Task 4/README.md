@@ -1,4 +1,5 @@
-## This is the folder for Task 4
+## Folder for Task 4
+
 
 I have uploaded the python scripts I created using the OpenCV library. I tried to stay true to the orginial C++ code, so I broke it up into three python file just like the original 
 

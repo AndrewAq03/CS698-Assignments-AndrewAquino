@@ -1,4 +1,5 @@
-### These are files for Task 2
+## Folder for Task 2
+
 
 This is the script I used estimate the pose of an object given its 3D coordinates in the world and its corresponding 2D image coordinates. I used the book's function that wraps solverPnP function as a reference. 
 

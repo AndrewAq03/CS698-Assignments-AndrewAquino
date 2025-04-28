@@ -55,12 +55,9 @@ class ObjectPoseEstimator(Node):
                     if T_est is not None:
                         translation = T_est.t
                         rpy = T_est.rpy()
-                        quaternion = T_est.rpy().to_quaternion().vec
-                        qw = T_est.rpy().to_quaternion().w
 
                         self.get_logger().info(f'Estimated Translation (x, y, z): {translation[0]:.4f}, {translation[1]:.4f}, {translation[2]:.4f}')
                         self.get_logger().info(f'Estimated RPY (roll, pitch, yaw): {rpy[0]:.4f}, {rpy[1]:.4f}, {rpy[2]:.4f}')
-                        self.get_logger().info(f'Estimated Quaternion (x, y, z, w): {quaternion[0]:.4f}, {quaternion[1]:.4f}, {quaternion[2]:.4f}, {qw:.4f}')
                     else:
                         self.get_logger().warn('Pose estimation failed.')
 

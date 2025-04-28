@@ -1,5 +1,5 @@
 Camera:
-  name: "Samsung Galaxy Note20 Ultra Sample"
+  name: "Samsung Galaxy Note20 Ultra"
   setup: "monocular"
   model: "perspective"
   fx: 2802.941537

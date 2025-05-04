@@ -5,11 +5,12 @@ I used Llama3.2 for this project on my respective computer. If you would like to
 add my folder to the src folder. 
 
 
-https://github.com/nasa-jpl/rosa/tree/main
+[ROSA Github](https://github.com/nasa-jpl/rosa/tree/main)
 
 ### Youtube Video Outlining Everything
+
 
 [![CS698 Project - Andrew Aquino](https://img.youtube.com/vi/17RQhx3AdWA/0.jpg)](https://www.youtube.com/watch?v=17RQhx3AdWA)
 
 
-
+Backup link: [CS698 Project](https://www.youtube.com/watch?v=17RQhx3AdWA)

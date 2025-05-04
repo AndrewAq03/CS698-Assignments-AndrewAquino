@@ -7,6 +7,7 @@ add my files to the src folder.
 
 ### Youtube Video Outlining Everything
 
-[![CS698 Project - Andrew Aquino](https://img.youtube.com/vi/17RQhx3AdWA.jpg)](https://www.youtube.com/watch?v=17RQhx3AdWA)
+[![CS698 Project - Andrew Aquino](https://img.youtube.com/vi/17RQhx3AdWA/0.jpg)](https://www.youtube.com/watch?v=17RQhx3AdWA)
+
 
 

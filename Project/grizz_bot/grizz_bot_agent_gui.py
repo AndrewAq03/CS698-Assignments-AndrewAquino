@@ -15,7 +15,7 @@ from help import get_help
 
 load_dotenv()
 
-# --- ROS INIT HANDLER --- #
+
 def init_ros_node_if_needed():
     if not rclpy.ok():
         rclpy.init()
@@ -30,7 +30,7 @@ def shutdown_ros():
     if rclpy.ok():
         rclpy.shutdown()
 
-# --- LLM + ROSA AGENT INIT --- #
+
 @st.cache_resource
 def initialize_agent():
     llm = ChatOllama(
@@ -66,7 +66,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- SESSION STATE INITIALIZATION --- #
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
@@ -79,7 +78,7 @@ if "rosa" not in st.session_state:
 if "ros_initialized" not in st.session_state:
     st.session_state.ros_initialized = False
 
-# --- UI --- #
+
 col1, col2, col3 = st.columns([1, 4, 1])
 with col2:
     st.title("🤖 GrizzBot 🐻")
@@ -90,20 +89,19 @@ with col2:
         with st.chat_message(sender):
             st.markdown(message)
 
-    # --- System Messages for First-time Users --- #
+    
     if not st.session_state.chat_history:
         with st.chat_message("bot"):
             st.markdown("Hi! I'm 🐻 GrizzBot 🤖. How can I help you today?\n\nTry typing 'help', 'examples', or ask me something about robot navigation.")
             st.session_state.chat_history.append(("bot", "Hi! I'm 🐻 GrizzBot 🤖. How can I help you today?\n\nTry typing 'help', 'examples', or ask me something about robot navigation."))
 
-    # --- Input Box --- #
+ 
     if not st.session_state.chat_ended:
         user_input = st.chat_input("Ask GrizzBot something...")
     else:
         st.info("👋 GrizzBot has ended the session. Refresh the page to start again.")
         user_input = None
 
-# --- Command Handlers --- #
 def handle_help():
     examples = [
         "Move to a Bench",
@@ -125,7 +123,7 @@ def handle_examples():
     ])
     return f"Here are some examples of what you can ask me:\n\n{examples}"
 
-# --- User Input Handler --- #
+
 async def process_rosa_stream(user_message):
     response = ""
     placeholder = st.empty()
@@ -176,7 +174,7 @@ if user_input:
             st.rerun()
             
         else:
-            # Initialize ROS if needed for ROSA commands
+            
             if not st.session_state.ros_initialized:
                 init_ros_node_if_needed()
                 
@@ -189,7 +187,7 @@ if user_input:
                 st.error(error_msg)
                 st.session_state.chat_history.append(("bot", error_msg))
 
-# --- Sidebar with Status Information --- #
+
 with st.sidebar:
     st.title("GrizzBot Status")
     

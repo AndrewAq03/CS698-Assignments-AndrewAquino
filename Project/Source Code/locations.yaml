@@ -1,0 +1,12 @@
+# Defines object locations as [x, y, theta]
+
+#these are the locations of the benchs
+
+#this is the location of the first bench
+Bench 1: [-0.4, 3.3, -0.26]
+#this is for the locatin of the second bench
+Bench 2: [-0.1, 0.75, -1.75]
+#this is the location of the third bench
+Bench 3: [3.95, 3.3, 3.5]
+#this is the home location
+Home: [0.6, 0.6, 0.0]

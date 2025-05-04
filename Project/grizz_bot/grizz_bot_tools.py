@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from langchain.tools import tool
 
 
-# Global node reference (we won't need this for command line approach)
+
 node = None
 
 # Load locations from YAML file
